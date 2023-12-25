@@ -1,0 +1,461 @@
+/*
+Sneha Thomas
+821360287
+CS 545
+CSS Assigment 4
+*/
+
+body {
+	font-size: 14pt;/*sets the normal body font size to 14pt*/
+	background-color: #9BB8CD;
+	color:#332e2e;
+	font-family: Arial, san-serif;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 30pt;/*sets the header 1 font size to 30pt*/
+	font-style: italic;/*sets style to italic for h1 text*/
+	font-weight: bold;
+	color: #4CB9E7;
+	font-family: "Palatino Linotype", "Times New Roman", serif;
+	text-align: center;
+	width: 100%;
+}
+/*paragraph styling*/
+p {
+	margin-left: 30px; 
+	margin-right: 30px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+
+h2 {
+	font-size: 26pt;/*sets the header 2 font size to 26pt*/
+	font-style: italic;
+	font-weight: bold;/*sets fond weight to bold for h2 text*/
+	Color: black;
+	font-family: Georgia, serif;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+/*heading 3 styling*/
+h3 {
+	font-size: 18pt;/*sets the header 3 font size to 18pt*/
+	font-weight: normal;
+	font-weight: bold;
+	font-family: Georgia, serif;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	Color: black;
+}
+
+
+
+header {
+  padding: 0px;
+  margin: 0px;
+  background-color: white;
+  color: #fffcf5;
+  min-width: 100vh;
+   
+}
+/*logo text alignment features*/
+.logo-row{
+  text-align: center;
+   margin-top: 0px;
+   padding: 15px;
+}
+
+/*navigation bar styling*/
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5FBDFF;
+}
+
+
+li a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: white;
+}
+
+/*navigation bar will be highlighted in black when you hover over it*/
+li a:hover {
+  background-color: white;
+  text-decoration: underline;/*underlines each naviagtion bar list*/
+  color: #4CB9E7;
+}
+
+.navbar {
+	clear: both;
+}
+div.first {
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+	flex-wrap: nowrap;
+	}
+	
+	article {
+	margin: 30px;
+}
+/*prints the error message in red*/
+.error {
+	color: #FF0000; 
+	}
+/*
+box used around the confirmation page outputs
+*/
+div.boxed {
+  border: 5px solid black; 
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+/*
+Background image
+*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  text-align: center;
+  background-image: url(images/InsideMuseum.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  min-width: 100vh;
+}
+.plain {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  text-align: center;
+  min-width: 100vh;
+}
+
+/*
+multiple column layout
+*/
+.aside-1 {
+   text-align: left;
+    padding: 15px;
+	margin: 0px;
+	flex: 25%; 
+	float: left;
+	width: 25%;
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+.aside-2 {
+   text-align: left;
+    padding: 15px;
+	margin: 0px;
+    flex: 50%; 
+	float: left;
+	width: 50%;
+	padding-right: 15px;
+    padding-left: 15px;   
+}
+.aside-3 {
+    text-align: left;
+    padding: 15px;
+	margin: 0px;
+    flex: 25%; 
+	float: left;
+	width: 25%;
+	padding-right: 15px;
+    padding-left: 15px;	
+}
+/*for different media types/devices*/
+@media (max-width: 800px){
+	.aside-1, .aside-2, .aside-3{
+		flex:100%;
+		 width:100%; 
+	}
+}
+
+
+@media all and (min-width: 800px) {
+  .aside-1 { order: 1; } 
+  .aside-2 { order: 2; }
+  .aside-3 { order: 3; }
+}
+
+
+/*
+multiple column layout
+*/
+.about-aside-1 {
+   text-align: left;
+    padding: 15px;
+	margin: auto;
+	float: left;
+	width: 50%;
+	padding-right: 15px;
+    padding-left: 15px;
+	min-width: 100vh;
+	
+}
+ .about-aside-2 {
+   text-align: left;
+    padding: 15px;
+	margin: 0px;
+	flex: 25%; 
+	float: left;
+	width: 50%;
+	background-color: #e6e6e6;
+	padding-right: 15px;
+    padding-left: 15px;
+	min-width: 100vh;
+ }
+ .about-aside-3 {
+   text-align: left;
+    padding: 15px;
+	margin: 0px;
+	flex: 25%; 
+	float: left;
+	width: 50%;
+	background-color: #e6e6e6;
+	padding-right: 15px;
+    padding-left: 15px;
+	min-width: 100vh;
+ }
+/*
+boxes used for multiple column layout
+*/
+div.boxed1 {
+  border: 5px solid black;
+  margin: 15px;
+  background-color: #d5d5d5;
+  padding: 10px;
+  
+}
+div.boxed2 {
+  border: 5px solid black;
+  margin: auto;
+  background-color: #d5d5d5;
+  padding: 10px;
+  
+}
+div.boxed3 {
+  border: 5px solid black;
+  margin: 15px;
+  background-color:#d5d5d5;
+  padding: 10px;
+  
+}
+
+/*image styling*/
+.imgf{
+	float: left;
+	height: auto;
+	padding: 200px;
+	width:100%;	
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.imgtoppost{
+	padding: 10px;
+	width:100%;
+	height: auto;
+	margin-left: 30px;
+}
+
+/*
+Left float image
+*/
+.imglftpost {
+
+	float: left;
+	height: auto;
+	padding: 20px;
+	width:40%;	
+}
+/*
+right float image
+*/
+
+.imgrghtpost {
+	
+    float: right;
+	height: auto;
+	padding: 20px;
+
+}
+
+.imglst{
+	padding:20px;
+	width:100%;
+	margin-left: auto;
+	margin-right:auto;
+	height:500px;
+	display:block;
+}
+
+/*slideshow on signup page */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+	display: none;
+
+}
+.slidesImg {
+	
+	display: none;
+}
+img {
+	vertical-align: middle;
+	}
+
+/*sets the scroll up button's color to orange as background with black color text*/
+.myBtn {
+
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+footer {
+	text-align: right;
+	background-color: white;
+	color: black;
+	padding: 0px 20px;
+	margin: 0px;
+	display: flex;
+    flex-wrap: wrap;
+	position: relative;
+	min-width: 100vh;
+	}
+
+footer a:link, footer a:visited {
+	color: #fffcf5;
+}
+
+footer a:hover, footer a:active {
+	color: #332e2e;
+	background-color: #fffcf5;
+	text-decoration: underline;
+}
+
+/*
+Footer Button Styles
+*/
+ul.footerbuttons {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden; 
+	background-color: #332e2e;
+	color: #fffcf5;
+}
+
+ul.footerbuttons li {
+	padding: 0px;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+ul.footerbuttons li a:link, ul.footerbuttons li a:visited {
+	color: #fffcf5;
+	text-decoration: none;
+}
+
+ul.footerbuttons li a:hover, ul.footerbuttons li a:active {
+	color: #332e2e;
+	background-color: #fffcf5;
+	text-decoration: none;
+}
+
+/* Footer Columns */
+
+.fcolumn1 {
+    padding: 15px;
+	text-align: right;
+}
+.fcolumn2 {
+    padding: 15px;
+	text-align: right;
+}
+.fcolumn3 {
+    padding: 15px;
+}
+/*for different media types/devices*/
+@media all and (min-width: 800px) {
+  .fcolumn1 { flex: 1 0px; } 
+  .fcolumn1 { order: 1; width: 33%; float: left; text-align: left;} 
+  .fcolumn2 { order: 2; width: 34%; float: left; text-align: left;}
+  .fcolumn3 { order: 3; width: 33%; float: left;}
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+Social media footer icons styling
+*/
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns a {
+	margin: 0;
+	padding: 5px;
+    justify-content:center;
+    text-align:center;
+}
+	
+
+
+.socialbtns a {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 60px;
+    height: 60px;
+	color: white;
+	background-color: #aaa;
+	padding-top: 15px;
+	transition: all ease 0.5s;
+	
+}
+/*icon changes when hover over it*/
+.socialbtns .fa:hover {
+	border-radius: 20px;
+	transition: all ease 0.5s;
+	
+	
+}
+
